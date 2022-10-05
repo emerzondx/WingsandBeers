@@ -29,6 +29,9 @@ function doModal(anchor, popupbox) {
         }
     });
 }
+
+
+
 // js for marquee
 const root = document.documentElement;
 const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
