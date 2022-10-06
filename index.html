@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/carusel.css" />
     <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+
 
     <title>Wings & Beers</title>
   </head>
@@ -107,74 +109,91 @@
         <div id="myModal" class="modal">
           <div class="modal-content">
             <div class="modal-header">
-              <button class="close" type="button" value="Cerrar">cerrar</button>
+              <!-- <button class="close" type="button" value="Cerrar">cerrar</button> -->
+              <a href="#" class="close"></a>
               <h2 class="modal-title">Menu de Alitas</h2>
               <h2 class="menu-price">6 por $6,000 12 por $9,000</h2>
             </div>
             <div class="modal-body">
-              <p class="menu-title">Originales</p>
-              <img
-                class="menu-image"
-                src="img/menu/original.jpg"
-                alt=""
-                width="200px"
-                height="200px"
-              />
-              <p class="menu-description">Description</p>
-              <p class="menu-title">Bufalo</p>
-              <img
-                class="menu-image"
-                src="img/menu/buffalo.webp"
-                alt=""
-                width="200px"
-                height="200px"
-              />
-              <p class="menu-description">Description</p>
-              <p class="menu-title">Limon con Pienta</p>
-              <img
-                class="menu-image"
-                src="img/menu/lemon-peper.jpeg"
-                alt=""
-                width="200px"
-                height="200px"
-              />
-              <p class="menu-description">Description</p>
-              <p class="menu-title">Queso Parmesano con Ajo</p>
-              <img
-                class="menu-image"
-                src="img/menu/garlic-parm.webp"
-                alt=""
-                width="200px"
-                height="200px"
-              />
-              <p class="menu-description">Description</p>
-              <p class="item-title">BBQ</p>
-              <img
-                class="menu-image"
-                src="img/menu/BBQ-Chicken-Wings.jpeg"
-                alt=""
-                width="200px"
-                height="200px"
-              />
-              <p class="menu-description">Description</p>
-              <p class="menu-title">Al Ajillo</p>
-              <img
-                class="menu-image"
-                src="img/menu/alitas-de-pollo-al-ajillo.jpeg"
-                alt=""
-                width="200px"
-                height="200px"
-              />
-              <p class="menu-description">Description</p>
-              <p class="menu-title">MJ (Salsa Picante/Dulce)</p>
-              <img
-                class="menu-image"
-                src="img/menu/sweet-and-sour-wings.jpeg"
-                alt=""
-                width="200px"
-                height="200px"
-              />
-              <p class="menu-description">Description</p>
+              <div class="menu-item">
+                <p class="menu-title">Originales</p>
+                <img
+                  class="menu-image"
+                  src="img/menu/original.jpg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">Description</p>
+              </div>
+
+              <div class="menu-item">
+                <p class="menu-title">Bufalo</p>
+                <img
+                  class="menu-image"
+                  src="img/menu/buffalo.webp"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">Description</p>
+              </div>
+
+              <div class="menu-item">
+                <p class="menu-title">Limon con Pienta</p>
+                <img
+                  class="menu-image"
+                  src="img/menu/lemon-peper.jpeg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">Description</p>
+              </div>
+              <div class="menu-item">
+                <p class="menu-title">Queso Parmesano con Ajo</p>
+                <img
+                  class="menu-image"
+                  src="img/menu/garlic-parm.webp"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">Description</p>
+              </div>
+              <div class="menu-item">
+                <p class="menu-title">BBQ</p>
+                <img
+                  class="menu-image"
+                  src="img/menu/BBQ-Chicken-Wings.jpeg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">Description</p>
+              </div>
+              <div class="menu-item">
+                <p class="menu-title">Al Ajillo</p>
+                <img
+                  class="menu-image"
+                  src="img/menu/alitas-de-pollo-al-ajillo.jpeg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">Description</p>
+              </div>
+              <div class="menu-item">
+                <p class="menu-title">MJ (Salsa Picante/Dulce)</p>
+                <img
+                  class="menu-image"
+                  src="img/menu/sweet-and-sour-wings.jpeg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">Description</p>
+              </div>
             </div>
             <div class="modal-footer">
               <p>
@@ -189,13 +208,13 @@
           <!-- Modal Content -->
           <div class="modal-content">
             <div class="modal-header">
-              <span class="close">&times;</span>
-              <h2>Menu de Sandwitch</h2>
-              <h2 class="price">6 por $6,000 y 12 por $9,000</h2>
+              <a href="#" class="close"></a>
+              <h2 class="modal-title">Menu de Sandwitch</h2>
+              <h2 class="menu-price"></h2>
             </div>
-            <div class="modal-body">
-              <div>
-                <p>Kobe #24</p>
+            <div class="modal-body2">
+              <div class="menu-item">
+                <p class="menu-title">Kobe #24</p>
                 <img
                   class="menu-image"
                   src="img/menu/kobe.webp"
@@ -203,11 +222,13 @@
                   width="200px"
                   height="200px"
                 />
-                <p class="description">
+                <p class="menu-description">
                   Pechuga de pollo frita, ensalada americana, cebolla frita,
                   queso cheddar, mayonesa y ketchup.
                 </p>
-                <p>Marino #13</p>
+              </div>
+                <div class="menu-item">
+                <p class="menu-title">Marino #13</p>
                 <img
                   class="menu-image"
                   src="img/menu/Marino.jpeg"
@@ -215,7 +236,7 @@
                   width="200px"
                   height="200px"
                 />
-                <p class="description">
+                <p class="menu-description">
                   Pechuga de pollo frita, Cebolla frita, bañado en queso Cheddar
                   mas pickle con mayonesa y ketchup.
                 </p>
@@ -231,55 +252,63 @@
           <!-- Modal Content -->
           <div class="modal-content">
             <div class="modal-header">
-              <span class="close">&times;</span>
-              <h2>Otros</h2>
+              <a href="#" class="close"></a>
+              <h2 class="modal-title">Otros</h2>
             </div>
-            <div class="modal-body">
-              <p>Chop-Chop</p>
-              <img
-                class="menu-image"
-                src="img/menu/chop-chop.jpeg"
-                alt=""
-                width="200px"
-                height="200px"
-              />
-              <p class="description">
-                Arroz frijoles negros, pollo frito cortado en cuadros con salsa
-                chilena.
-              </p>
-              <p>2 Empanadas de Pescado con Camarones</p>
-              <img
-                class="menu-image"
-                src="img/menu/empanadas-de-pescado.jpeg"
-                alt=""
-                width="200px"
-                height="200px"
-              />
-              <p class="description">need a description please</p>
-              <p>Taquitos Veganos</p>
-              <img
-                class="menu-image"
-                src="img/menu/taquitos.jpeg"
-                alt=""
-                width="200px"
-                height="200px"
-              />
-              <p class="description">
-                Tortilla garbanzo lechuga, tomate, cebolla frita y con salsa de
-                cilantro
-              </p>
-              <p>Loaded Fries</p>
-              <img
-                class="menu-image"
-                src="img/menu/Loaded-Fries.jpeg"
-                alt=""
-                width="200px"
-                height="200px"
-              />
-              <p class="description">
-                Papas fritas bañadas de queso cheddar y crujiente tocino con
-                crema agria.
-              </p>
+            <div class="modal-body3">
+              <div class="menu-item">
+                <p class="menu-title">Chop-Chop</p>
+                <img
+                  class="menu-image"
+                  src="img/menu/chop-chop.jpeg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">
+                  Arroz frijoles negros, pollo frito cortado en cuadros con
+                  salsa chilena.
+                </p>
+              </div>
+                <div class="menu-item">
+                <p class="menu-title">2 Empanadas de Pescado con Camarones</p>
+                <img
+                  class="menu-image"
+                  src="img/menu/empanadas-de-pescado.jpeg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">need a description please</p>
+              </div>
+                <div class="menu-item">
+                <p class="menu-title">Taquitos Veganos</p>
+                <img
+                  class="menu-image"
+                  src="img/menu/taquitos.jpeg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">
+                  Tortilla garbanzo lechuga, tomate, cebolla frita y con salsa
+                  de cilantro
+                </p>
+              </div>
+                <div class="menu-item">
+                <p class="menu-title">Loaded Fries</p>
+                <img
+                  class="menu-image"
+                  src="img/menu/Loaded-Fries.jpeg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">
+                  Papas fritas bañadas de queso cheddar y crujiente tocino con
+                  crema agria.
+                </p>
+              </div>
             </div>
             <div class="modal-footer">
               <p></p>
@@ -291,19 +320,70 @@
           <!-- Modal Content -->
           <div class="modal-content">
             <div class="modal-header">
-              <span class="close">&times;</span>
-              <h2>Menu de Bebidas</h2>
+              <a href="#" class="close"></a>
+              <h2 class="modal-title">Menu de Bebidas</h2>
             </div>
-            <div class="modal-body">
-              <ul>
-                <li>Blonde = 2,000</li>
-                <li>IPA = 3,00</li>
-                <li>Artesanal = 4,000</li>
-                <li>Bebidas =1,500</li>
-                <li>Piscola = 3,500</li>
-              </ul>
+            <div class="modal-body4">
+              <div class="menu-item">
+                <p class="menu-title">Blonde</p>
+                <img
+                  class="menu-image"
+                  src="img/bebidas/royal.jpg"
+                  alt=""
+                  width="200px"
+                  height="200px"
+                />
+                <p class="menu-description">$2,000</p>
+              </div>
+              
+                >
+                <div class="menu-item">
+                  <p class="menu-title">IPA</p>
+                  <img
+                    class="menu-image"
+                    src="img/bebidas/IPA.png"
+                    alt=""
+                    width="200px"
+                    height="300px"
+                  />
+                  <p class="menu-description">$2,000</p>
+                </div>
+
+                <div class="menu-item">
+                  <p class="menu-title">Artesanal</p>
+                  <img
+                    class="menu-image"
+                    src="img/bebidas/kusman.webp"
+                    alt=""
+                    width="200px"
+                    height="200px"
+                  />
+                  <p class="menu-description">$3,000</p>
+                </div>
+                <div class="menu-item">
+                  <p class="menu-title">Bebidas</p>
+                  <img
+                    class="menu-image"
+                    src="img/bebidas/coca.webp"
+                    alt=""
+                    width="200px"
+                    height="200px"
+                  />
+                  <p class="menu-description">$1,000</p>
+                </div>
+                <div class="menu-item">
+                  <p class="menu-title">Piscola</p>
+                  <img
+                    class="menu-image"
+                    src="img/bebidas/Piscola.jpg"
+                    alt=""
+                    width="200px"
+                    height="200px"
+                  />
+                  <p class="menu-description">$3,500</p>
+                </div>
             </div>
-            <div class="modal-footer"></div>
+            <div class="modal-footer">Happy Hour 15:00 a 18:00</div>
           </div>
         </div>
       </section>
