@@ -1,9 +1,31 @@
+.events-img{
+    padding-top: 1rem;
+}
+
 .footer-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100vw;
+    color: white;
 }
+
+.visit-container{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    padding: .5rem;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+}
+iframe{
+    margin-top: 2rem;
+}
+/* .contact-list{
+    width: 100px;
+    color: white;
+} */
 
 .delivery{
     display: flex;
