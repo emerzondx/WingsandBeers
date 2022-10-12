@@ -37,30 +37,30 @@ body {
 }
 
 header {
+    width: 100vw;
     position: relative;
     display: flex;
     justify-content: center;
-    /* width: 200px; */
 }
 
 .logo img{
     display: block;
-    width: 30em;
+    width: 15rem;
+    /* margin-right: 50%; */
 }
 
 .social-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3em;
-    margin-left: 20%;
-    margin-right: 20%;
+    padding: 1.5em;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .social-links img{
-    width: 100%;
-    max-width: 75px;
-    height: auto;
+    max-width: 50px;
+    
 }
 
 
@@ -71,8 +71,8 @@ header {
     display: flex;
     justify-content: center;
     text-transform: capitalize;
-    font-size: 70px;
-    padding: 0.5em;
+    font-size: 4rem;
+    padding: 0.5rem;
 }
 
 .food-menu {
@@ -131,6 +131,7 @@ header {
 
 .events-container {
     display: flex;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     /* padding: 3em; */
