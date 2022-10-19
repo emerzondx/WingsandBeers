@@ -32,7 +32,7 @@
     max-height: 100vh;
     overflow: auto;
     position: relative;
-    background: url(/img/Modal-bk/woodback2.jpg);
+    background: url(../img/Modal-bk/woodback13.jpg);
     background-size: cover;
     margin: auto;
     padding: 0;
@@ -59,12 +59,13 @@
     font-weight: bold;
     border-radius: 20%;
     position: sticky ; */
-    position: absolute;
-    right: 32px;
-    top: 32px;
+    position: fixed;
+    right: 25px;
+    top: 7.5rem;
     width: 32px;
     height: 32px;
     opacity: 0.3;
+    
 }
 
 /* .close:hover,
@@ -82,7 +83,7 @@
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: rgb(252, 250, 250);
+    background-color: rgb(247, 10, 10);
   }
   .close:before {
     transform: rotate(45deg);
