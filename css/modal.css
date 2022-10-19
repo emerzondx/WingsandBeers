@@ -33,7 +33,7 @@
     overflow: auto;
     position: relative;
     background: url(../img/Modal-bk/woodback13.jpg);
-    background-size: cover;
+    background-size:cover;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
@@ -53,12 +53,12 @@
 
 
 .close {
-    /* color: rgb(7, 7, 7);
+    color: rgb(7, 7, 7);
     float: right;
     font-size: 28px;
     font-weight: bold;
     border-radius: 20%;
-    position: sticky ; */
+    position: sticky ;
     position: fixed;
     right: 25px;
     top: 7.5rem;
