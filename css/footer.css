@@ -30,19 +30,27 @@ iframe{
 .delivery{
     display: flex;
     width: 100%vw;
-    background-color: dimgrey;
+    /* background-color: dimgrey; */
     justify-content: center;
     align-items: center;
     padding: 2em;
 }
 
 .delivery-btn{
-    width: 100%;
-    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+    /* height: rem; */
     border-radius: 30px;
     font-size: 2rem;
+    font-family: Montserrat;
     border-color: red;
-    background-color: blue;
+    background-image: url('../img/footer/orange-background.jpg');
+    align-items: center;
+    box-shadow: 3px 3px rgb(79, 35, 35);
     
-    
+}
+
+.moto-delivery{
+    width: 6rem;
 }
