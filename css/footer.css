@@ -45,7 +45,7 @@ iframe{
     font-size: 2rem;
     font-family: Montserrat;
     border-color: red;
-    background-image: url(/img/footer/orange-background.jpg);
+    background-image: url('../img/footer/orange-background.jpg');
     align-items: center;
     box-shadow: 3px 3px rgb(79, 35, 35);
     
