@@ -1,0 +1,45 @@
+.food-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    max-width: 95%;
+    margin: auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 28em;
+    padding: 1em;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    opacity: 50%;
+    border-radius: 30px;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    font-size: 4em;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Parisienne;
+}
+
+/* needs animation  */
+.container .btn:hover {
+    background-color: rgb(241, 105, 50);
+}

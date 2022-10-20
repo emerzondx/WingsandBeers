@@ -1,0 +1,30 @@
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.social-links img{
+    max-width: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .social-links {
+        margin-left: 25%;
+        margin-right: 25%;
+
+    }
+    .social-links img{
+        max-width: 75px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .social-links {
+        margin-left: 20%;
+        margin-right: 20%;
+
+    }
+    
+  }

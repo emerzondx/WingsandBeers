@@ -18,6 +18,7 @@
     justify-content: center;
     align-items: center;
     font-family: Montserrat;
+    text-align: center;
 }
 iframe{
     margin-top: 2rem;
@@ -30,7 +31,6 @@ iframe{
 .delivery{
     display: flex;
     width: 100%vw;
-    /* background-color: dimgrey; */
     justify-content: center;
     align-items: center;
     padding: 2em;
@@ -40,7 +40,6 @@ iframe{
     display: flex;
     flex-direction: column;
     min-width: 20rem;
-    /* height: rem; */
     border-radius: 30px;
     font-size: 2rem;
     font-family: Montserrat;
@@ -53,4 +52,36 @@ iframe{
 
 .moto-delivery{
     width: 6rem;
+
 }
+
+@media only screen and (min-width: 1024px) {
+    .visit-container{
+        font-size: 1.3rem;
+        gap: 2em;
+        padding: 0;
+        
+
+    }
+    
+    .address-container{
+        margin-top: 2.2rem;
+    }
+    
+    iframe{
+        width: 300px;
+        height: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .visit-container{
+        flex-direction: row;
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+  }

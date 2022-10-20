@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/hamburger.css" />
-    <link rel="stylesheet" href="css/modal.css" />
-    <!-- <link rel="stylesheet" href="css/gallery.css" /> -->
-    <link rel="stylesheet" href="css/slider.css" />
-    <link rel="stylesheet" href="css/carusel.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
 
-    <title>Wings & Beers</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/social.css" />
+  <link rel="stylesheet" href="css/hamburger.css" />
+  <link rel="stylesheet" href="css/food.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <!-- <link rel="stylesheet" href="css/gallery.css" /> -->
+  <link rel="stylesheet" href="css/slider.css" />
+  <link rel="stylesheet" href="css/eventos.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-  <body>
-    <header>
-      <div class="logo">
-        <img src="./img/logo.png" alt="Wings and Beers Logo" />
+  <title>Wings & Beers</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/logo.png" alt="Wings and Beers Logo" />
+    </div>
+  </header>
+  <main>
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger">
+        <div></div>
       </div>
-    </header>
-    <main>
-      <div class="menu-wrap">
-        <input type="checkbox" class="toggler" />
-        <div class="hamburger">
-          <div></div>
-        </div>
-        <div class="menu">
+      <div class="menu">
+        <div>
           <div>
-            <div>
-              <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Visitanos</a></li>
-              </ul>
-            </div>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Galeria</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Visitanos</a></li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Social Links -->
-
+    <!-- Social Links -->
+    <div class="social-links-container">
       <div class="social-links">
         <!-- need to change the link for the rappi account -->
         <a href="#">
@@ -64,472 +67,299 @@
         </a>
         <!-- need to change the phone number for whatsapp -->
         <a href="https://wa.me/939041669?text=urlencodedtext">
-          <img
-            class="whatsapp-btn"
-            alt="whatsapp"
-            src="img/social-icon/wp-icon.png"
-          />
+          <img class="whatsapp-btn" alt="whatsapp" src="img/social-icon/wp-icon.png" />
         </a>
       </div>
+    </div>
+    <!-- Food Menu -->
 
-      <!-- Food Menu -->
+    <section id="menu" class="section-1">
+      <h2 class="section-title">menu</h2>
+      <div class="food-menu">
+        <div class="container">
+          <img src="img/menu/wings__menu.jpg" alt="menu de alitas" style="width: 100%" />
+          <button id="myBtn" class="btn">Alitas</button>
+        </div>
+        <div class="container">
+          <img src="img/menu/sandwitch__menu.jpg" alt="menu de sandwitch" style="width: 100%" />
+          <button id="myBtn1" class="btn">Sandwitch</button>
+        </div>
+        <div class="container">
+          <img src="img/menu/soupandsalad__menu.jpg" alt="menu de sandwitch" style="width: 100%" />
+          <button id="myBtn2" class="btn">Otros</button>
+        </div>
+        <div class="container">
+          <img src="img/menu/beverages__menu.jpg" alt="menu de sandwitch" style="width: 100%" />
+          <button id="myBtn3" class="btn">Bebidas</button>
+        </div>
+      </div>
 
-      <section id="menu" class="section-1">
-        <h2 class="section-title">menu</h2>
-        <div class="food-menu">
-          <div class="container">
-            <img
-              src="img/menu/wings__menu.jpg"
-              alt="menu de alitas"
-              style="width: 100%"
-            />
-            <button id="myBtn" class="btn">Alitas</button>
+      <!-- The Modal  Alitas-->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button class="close" type="button" value="Cerrar">cerrar</button> -->
+            <a href="#" class="close"></a>
+            <h2 class="modal-title">Menu de Alitas</h2>
+            <h2 class="menu-price">6 por $6,000 12 por $9,000</h2>
           </div>
-          <div class="container">
-            <img
-              src="img/menu/sandwitch__menu.jpg"
-              alt="menu de sandwitch"
-              style="width: 100%"
-            />
-            <button id="myBtn1" class="btn">Sandwitch</button>
+          <div class="modal-body">
+            <div class="menu-item">
+              <p class="menu-title">Originales</p>
+              <img class="menu-image" src="img/menu/original.jpg" alt="" width="200px" height="200px" />
+              <p class="menu-description">Description</p>
+            </div>
+
+            <div class="menu-item">
+              <p class="menu-title">Bufalo</p>
+              <img class="menu-image" src="img/menu/buffalo.webp" alt="" width="200px" height="200px" />
+              <p class="menu-description">Description</p>
+            </div>
+
+            <div class="menu-item">
+              <p class="menu-title">Limon con Pienta</p>
+              <img class="menu-image" src="img/menu/lemon-peper.jpeg" alt="" width="200px" height="200px" />
+              <p class="menu-description">Description</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-title">Parmesano con Ajo</p>
+              <img class="menu-image" src="img/menu/garlic-parm.webp" alt="" width="200px" height="200px" />
+              <p class="menu-description">Description</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-title">BBQ</p>
+              <img class="menu-image" src="img/menu/BBQ-Chicken-Wings.jpeg" alt="" width="200px" height="200px" />
+              <p class="menu-description">Description</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-title">Al Ajillo</p>
+              <img class="menu-image" src="img/menu/alitas-de-pollo-al-ajillo.jpeg" alt="" width="200px"
+                height="200px" />
+              <p class="menu-description">Description</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-title">MJ (Salsa Picante/Dulce)</p>
+              <img class="menu-image" src="img/menu/sweet-and-sour-wings.jpeg" alt="" width="200px" height="200px" />
+              <p class="menu-description">Description</p>
+            </div>
           </div>
-          <div class="container">
-            <img
-              src="img/menu/soupandsalad__menu.jpg"
-              alt="menu de sandwitch"
-              style="width: 100%"
-            />
-            <button id="myBtn2" class="btn">Otros</button>
-          </div>
-          <div class="container">
-            <img
-              src="img/menu/beverages__menu.jpg"
-              alt="menu de sandwitch"
-              style="width: 100%"
-            />
-            <button id="myBtn3" class="btn">Bebidas</button>
+          <div class="modal-footer">
+            <p>
+              Todas las ordenes inclullen Papas Fritas y Salsa de Cilantro
+            </p>
           </div>
         </div>
+      </div>
 
-        <!-- The Modal  Alitas-->
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <!-- <button class="close" type="button" value="Cerrar">cerrar</button> -->
-              <a href="#" class="close"></a>
-              <h2 class="modal-title">Menu de Alitas</h2>
-              <h2 class="menu-price">6 por $6,000 12 por $9,000</h2>
+      <!-- The Modal Sandwitch-->
+      <div id="myModal1" class="modal">
+        <!-- Modal Content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <a href="#" class="close"></a>
+            <h2 class="modal-title">Menu de Sandwitch</h2>
+            <h2 class="menu-price"></h2>
+          </div>
+          <div class="modal-body2">
+            <div class="menu-item">
+              <p class="menu-title">Kobe #24</p>
+              <img class="menu-image" src="img/menu/kobe.webp" alt="" width="200px" height="200px" />
+              <p class="menu-description">
+                Pechuga de pollo frita, ensalada americana, cebolla frita,
+                queso cheddar, mayonesa y ketchup.
+              </p>
             </div>
-            <div class="modal-body">
-              <div class="menu-item">
-                <p class="menu-title">Originales</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/original.jpg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">Description</p>
-              </div>
-
-              <div class="menu-item">
-                <p class="menu-title">Bufalo</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/buffalo.webp"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">Description</p>
-              </div>
-
-              <div class="menu-item">
-                <p class="menu-title">Limon con Pienta</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/lemon-peper.jpeg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">Description</p>
-              </div>
-              <div class="menu-item">
-                <p class="menu-title">Parmesano con Ajo</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/garlic-parm.webp"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">Description</p>
-              </div>
-              <div class="menu-item">
-                <p class="menu-title">BBQ</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/BBQ-Chicken-Wings.jpeg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">Description</p>
-              </div>
-              <div class="menu-item">
-                <p class="menu-title">Al Ajillo</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/alitas-de-pollo-al-ajillo.jpeg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">Description</p>
-              </div>
-              <div class="menu-item">
-                <p class="menu-title">MJ (Salsa Picante/Dulce)</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/sweet-and-sour-wings.jpeg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">Description</p>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <p>
-                Todas las ordenes inclullen Papas Fritas y Salsa de Cilantro
+            <div class="menu-item">
+              <p class="menu-title">Marino #13</p>
+              <img class="menu-image" src="img/menu/Marino.jpeg" alt="" width="200px" height="200px" />
+              <p class="menu-description">
+                Pechuga de pollo frita, Cebolla frita, bañado en queso Cheddar
+                mas pickle con mayonesa y ketchup.
               </p>
             </div>
           </div>
-        </div>
-
-        <!-- The Modal Sandwitch-->
-        <div id="myModal1" class="modal">
-          <!-- Modal Content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <a href="#" class="close"></a>
-              <h2 class="modal-title">Menu de Sandwitch</h2>
-              <h2 class="menu-price"></h2>
-            </div>
-            <div class="modal-body2">
-              <div class="menu-item">
-                <p class="menu-title">Kobe #24</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/kobe.webp"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">
-                  Pechuga de pollo frita, ensalada americana, cebolla frita,
-                  queso cheddar, mayonesa y ketchup.
-                </p>
-              </div>
-              <div class="menu-item">
-                <p class="menu-title">Marino #13</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/Marino.jpeg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">
-                  Pechuga de pollo frita, Cebolla frita, bañado en queso Cheddar
-                  mas pickle con mayonesa y ketchup.
-                </p>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <p>Todas las ordenes inclullen Papas Fritas</p>
-            </div>
+          <div class="modal-footer">
+            <p>Todas las ordenes inclullen Papas Fritas</p>
           </div>
         </div>
-        <!-- The Modal Otros -->
-        <div id="myModal2" class="modal">
-          <!-- Modal Content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <a href="#" class="close"></a>
-              <h2 class="modal-title">Otros</h2>
-            </div>
-            <div class="modal-body3">
-              <div class="menu-item">
-                <p class="menu-title">Chop-Chop</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/chop-chop.jpeg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">
-                  Arroz frijoles negros, pollo frito cortado en cuadros con
-                  salsa chilena.
-                </p>
-              </div>
-              <div class="menu-item">
-                <p class="menu-title">2 Empanadas de Pescado con Camarones</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/empanadas-de-pescado.jpeg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">need a description please</p>
-              </div>
-              <div class="menu-item">
-                <p class="menu-title">Taquitos Veganos</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/taquitos.jpeg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">
-                  Tortilla garbanzo lechuga, tomate, cebolla frita y con salsa
-                  de cilantro
-                </p>
-              </div>
-              <div class="menu-item">
-                <p class="menu-title">Loaded Fries</p>
-                <img
-                  class="menu-image"
-                  src="img/menu/Loaded-Fries.jpeg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">
-                  Papas fritas bañadas de queso cheddar y crujiente tocino con
-                  crema agria.
-                </p>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <!-- The Modal bebidas -->
-        <div id="myModal3" class="modal">
-          <!-- Modal Content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <a href="#" class="close"></a>
-              <h2 class="modal-title">Menu de Bebidas</h2>
-            </div>
-            <div class="modal-body4">
-              <div class="menu-item">
-                <p class="menu-title">Blonde</p>
-                <img
-                  class="menu-image"
-                  src="img/bebidas/royal.jpg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">$2,000</p>
-              </div>
-              <div class="menu-item">
-                <p class="menu-title">IPA</p>
-                <img
-                  class="menu-image"
-                  src="img/bebidas/IPA.png"
-                  alt=""
-                  width="200px"
-                  height="300px"
-                />
-                <p class="menu-description">$2,000</p>
-              </div>
-
-              <div class="menu-item">
-                <p class="menu-title">Artesanal</p>
-                <img
-                  class="menu-image"
-                  src="img/bebidas/kusman.webp"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">$3,000</p>
-              </div>
-              <div class="menu-item">
-                <p class="menu-title">Bebidas</p>
-                <img
-                  class="menu-image"
-                  src="img/bebidas/coca.webp"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">$1,000</p>
-              </div>
-              <div class="menu-item">
-                <p class="menu-title">Piscola</p>
-                <img
-                  class="menu-image"
-                  src="img/bebidas/Piscola.jpg"
-                  alt=""
-                  width="200px"
-                  height="200px"
-                />
-                <p class="menu-description">$3,500</p>
-              </div>
-            </div>
-            <div class="modal-footer">Happy Hour 15:00 a 18:00</div>
-          </div>
-        </div>
-      </section>
-
-      <h2 class="section-title">Galeria</h2>
-      <section class="image-slider">
-        <div class="slideshow-container">
-
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/gallery/fun10.jpeg" style="width:100%">
-            <div class="text">Caption Text</div>
-          </div>
-        
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/gallery/fun11.jpeg" style="width:100%">
-            <div class="text">Caption Two</div>
-          </div>
-        
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img/gallery/fun13.jpeg" style="width:100%">
-            <div class="text">Caption Three</div>
-          </div>
-        
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-      </section>
-  
-      <!-- Galery -->
-      <!-- <h2 class="section-title">Galeria</h2>
-      <div class="grid">
-        <div class="grid-inner">
-          <div class="item">
-            <div class="item-inner"></div>
-          </div>
-          <div class="item">
-            <div class="item-inner"></div>
-          </div>
-          <div class="item">
-            <div class="item-inner"></div>
-          </div>
-          <div class="item">
-            <div class="item-inner"></div>
-          </div>
-          <div class="item">
-            <div class="item-inner"></div>
-          </div>
-          <div class="item">
-            <div class="item-inner"></div>
-          </div>
-          <div class="item">
-            <div class="item-inner"></div>
-          </div>
-          <div class="item">
-            <div class="item-inner"></div>
-          </div>
-          <div class="item">
-            <div class="item-inner"></div>
-          </div>
-          <div class="item">
-            <div class="item-inner"></div>
-          </div> -->
-          <!-- <div class="item">
-                <div class="item-inner"></div>
-            </div> -->
-          <!-- <div class="item">
-                <div class="item-inner"></div>
-            </div> -->
-        <!-- </div> -->
-      <!-- </div> -->
-
-      <!-- Eventos -->
-      <h2 class="section-title">Eventos</h2>
-          <!-- Marquee -->
-          <section class="marquee-container">
-            <div class="marquee">
-              <ul class="marquee-content">
-                <li><img src="img/carousel/champs.png" alt="" /></li>
-                <li><img src="img/carousel/colo-colo.png" alt="" /></li>
-                <li><img src="img/carousel/f1.png" alt="" /></li>
-                <li><img src="img/carousel/nba.png" alt="" /></li>
-                <li><img src="img/carousel/nfl.png" alt="" /></li>
-                <li><img src="img/carousel/curico-unido.png" alt="" /></li>
-                <li><img src="img/carousel/prem.png" alt="" /></li>
-                <li><img src="img/carousel/rugby-league.png" alt="" /></li>
-                <li><img src="img/carousel/ryder.png" alt="" /></li>
-                <!-- <li><img src="img/carousel/six-nations.png" alt="" /></li> -->
-              </ul>
-            </div>
-          </section>
-      <div class="events-container">
-        <img
-          class="events-img"
-          src="img/events/pokemon.jpeg"
-          alt=""
-          width="250px"
-          height="350px"
-        />
       </div>
-    </main>
-    <footer>
-      <h2 class="section-title">Visitanos</h2>
-      <div class="footer-container">
-        <div class="visit-container">
+      <!-- The Modal Otros -->
+      <div id="myModal2" class="modal">
+        <!-- Modal Content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <a href="#" class="close"></a>
+            <h2 class="modal-title">Otros</h2>
+          </div>
+          <div class="modal-body3">
+            <div class="menu-item">
+              <p class="menu-title">Chop-Chop</p>
+              <img class="menu-image" src="img/menu/chop-chop.jpeg" alt="" width="200px" height="200px" />
+              <p class="menu-description">
+                Arroz frijoles negros, pollo frito cortado en cuadros con
+                salsa chilena.
+              </p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-title">2 Empanadas de Pescado con Camarones</p>
+              <img class="menu-image" src="img/menu/empanadas-de-pescado.jpeg" alt="" width="200px" height="200px" />
+              <p class="menu-description">need a description please</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-title">Taquitos Veganos</p>
+              <img class="menu-image" src="img/menu/taquitos.jpeg" alt="" width="200px" height="200px" />
+              <p class="menu-description">
+                Tortilla garbanzo lechuga, tomate, cebolla frita y con salsa
+                de cilantro
+              </p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-title">Loaded Fries</p>
+              <img class="menu-image" src="img/menu/Loaded-Fries.jpeg" alt="" width="200px" height="200px" />
+              <p class="menu-description">
+                Papas fritas bañadas de queso cheddar y crujiente tocino con
+                crema agria.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal bebidas -->
+      <div id="myModal3" class="modal">
+        <!-- Modal Content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <a href="#" class="close"></a>
+            <h2 class="modal-title">Menu de Bebidas</h2>
+          </div>
+          <div class="modal-body4">
+            <div class="menu-item">
+              <p class="menu-title">Blonde</p>
+              <img class="menu-image" src="img/bebidas/royal.jpg" alt="" width="200px" height="200px" />
+              <p class="menu-description">$2,000</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-title">IPA</p>
+              <img class="menu-image" src="img/bebidas/IPA.png" alt="" width="200px" height="300px" />
+              <p class="menu-description">$2,000</p>
+            </div>
+
+            <div class="menu-item">
+              <p class="menu-title">Artesanal</p>
+              <img class="menu-image" src="img/bebidas/kusman.webp" alt="" width="200px" height="200px" />
+              <p class="menu-description">$3,000</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-title">Bebidas</p>
+              <img class="menu-image" src="img/bebidas/coca.webp" alt="" width="200px" height="200px" />
+              <p class="menu-description">$1,000</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-title">Piscola</p>
+              <img class="menu-image" src="img/bebidas/Piscola.jpg" alt="" width="200px" height="200px" />
+              <p class="menu-description">$3,500</p>
+            </div>
+          </div>
+          <div class="modal-footer">Happy Hour 15:00 a 18:00</div>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="section-title">Galeria</h2>
+
+    <section class="image-slider">
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/gallery/fun10.jpeg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/gallery/fun11.jpeg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/gallery/fun13.jpeg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <!-- Eventos -->
+    <h2 class="section-title">Eventos</h2>
+    <!-- Marquee -->
+    <section class="marquee-container">
+      <div class="marquee">
+        <ul class="marquee-content">
+          <li><img src="img/carousel/champs.png" alt="" /></li>
+          <li><img src="img/carousel/colo-colo.png" alt="" /></li>
+          <li><img src="img/carousel/f1.png" alt="" /></li>
+          <li><img src="img/carousel/nba.png" alt="" /></li>
+          <li><img src="img/carousel/nfl.png" alt="" /></li>
+          <li><img src="img/carousel/curico-unido.png" alt="" /></li>
+          <li><img src="img/carousel/prem.png" alt="" /></li>
+          <li><img src="img/carousel/rugby-league.png" alt="" /></li>
+          <li><img src="img/carousel/ryder.png" alt="" /></li>
+          <!-- <li><img src="img/carousel/six-nations.png" alt="" /></li> -->
+        </ul>
+      </div>
+    </section>
+    <div class="events-container">
+      <img class="events-img" src="img/events/pokemon.jpeg" alt="" width="250px" height="350px" />
+    </div>
+  </main>
+  <footer>
+    <h2 class="section-title">Visitanos</h2>
+    <div class="footer-container">
+      <div class="visit-container">
+        <div class="address-container">
           <h4>Nuestra Direccion</h4>
-          <address >Argomedo 95 Local 7 Curico, Maule.</address>
+          <address>Argomedo 95 Local 7 Curico, Maule.</address>
           <a href="tel:+56939041669" class="contact-list">Llamanos / +56 9 39-041-669</a>
-          <a href="mailto:wingsandbeers07@gmail.com">Escribenos  Wingsandbeers07@gmail.com</a>
+          <br>
+          <a href="mailto:wingsandbeers07@gmail.com">Escribenos Wingsandbeers07@gmail.com</a>
+        </div>
           <iframe class="map-container"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.8036283592055!2d-71.237689049687!3d-34.98658318526584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96645743b5ceeb83%3A0x306a9a579da61a49!2sWings%20and%20Beers!5e0!3m2!1sen!2scl!4v1665094624488!5m2!1sen!2scl"
-            width="200"
-            style="border: 0"
-            allowfullscreen="true"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            width="200" style="border: 0" allowfullscreen="true" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+      </div>
+      <div class="conatact-container">
+        <div class="delivery">
+          <button class="delivery-btn" type="submit"><img class="moto-delivery" src="img/footer/motorcycle-delivery.ico"
+              alt="">Delivery</button>
         </div>
-        <div class="conatact-container">
-          <div class="delivery">
-            <button class="delivery-btn" type="submit"><img class= "moto-delivery"src="img/footer/motorcycle-delivery.ico" alt="">Delivery</button>
-          </div>
-          <form>
+        <form>
           <!-- <img src="img/contact/phone.webp" width="50" height="50" alt="" /> -->
           <!-- <img src="img/contact/envelop.png" width="50" height="50" alt="" /> -->
         </form>
-        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
